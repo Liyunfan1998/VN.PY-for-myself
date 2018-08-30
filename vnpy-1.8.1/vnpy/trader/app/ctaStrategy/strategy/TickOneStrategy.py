@@ -30,7 +30,7 @@ class TickArrayManager(object):
         self.TickbidVolume1Array = np.zeros(self.size)
         self.TickaskPrice1Array = np.zeros(self.size)
         self.TickbidPrice1Array = np.zeros(self.size)
-        self.TickopenInterestArray = np.zeros(self.size)
+        # self.TickopenInterestArray = np.zeros(self.size)
         self.TickvolumeArray = np.zeros(self.size)
   
     # ----------------------------------------------------------------------
@@ -45,7 +45,7 @@ class TickArrayManager(object):
         self.TickbidVolume1Array[0:self.size - 1] = self.TickbidVolume1Array[1:self.size]
         self.TickaskPrice1Array[0:self.size - 1] = self.TickaskPrice1Array[1:self.size]
         self.TickbidPrice1Array[0:self.size - 1] = self.TickbidPrice1Array[1:self.size]
-        self.TickopenInterestArray[0:self.size - 1] = self.TickopenInterestArray[1:self.size]
+        # self.TickopenInterestArray[0:self.size - 1] = self.TickopenInterestArray[1:self.size]
         self.TickvolumeArray[0:self.size - 1] = self.TickvolumeArray[1:self.size]
   
         self.TicklastPriceArray[-1] = tick.lastPrice
@@ -53,7 +53,7 @@ class TickArrayManager(object):
         self.TickbidVolume1Array[-1] = tick.bidVolume1
         self.TickaskPrice1Array[-1] = tick.askPrice1
         self.TickbidPrice1Array[-1] = tick.bidPrice1
-        self.TickopenInterestArray[-1] = tick.openInterest
+        # self.TickopenInterestArray[-1] = tick.openInterest
         self.TickvolumeArray[-1] = tick.volume
   
     def askBidVolumeDif(self):

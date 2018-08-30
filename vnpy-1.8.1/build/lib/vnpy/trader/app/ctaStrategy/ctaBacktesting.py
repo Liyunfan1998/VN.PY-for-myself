@@ -198,7 +198,7 @@ class BacktestingEngine(object):
 
         # 载入初始化需要用的数据
         flt = {'datetime':{'$gte':self.dataStartDate,
-                           '$lt':self.dataStartDate}}        
+                           '$lt':self.dataEndDate}}
         initCursor = collection.find(flt).sort('datetime')
         # 将数据从查询指针中读取出，并生成列表
         self.initData = []              # 清空initData列表

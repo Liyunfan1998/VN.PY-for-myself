@@ -217,7 +217,7 @@ class BitCoinStrategy(CtaTemplate):
             if (tick.amount >= self.howManyTimes * np.mean(self.LastXminTickList)) \
                     and (abs(self.beta) > (1 + self.BetaThreshold)):
                 # 如果beta<0 反着开多单
-                if self.betaSign == False:
+                if self.betaSign == True:
                     self.buy(tick.lastPrice, self.fixedSize, False)
                 # 如果beta>0 开空单
                 else:
@@ -243,51 +243,6 @@ class BitCoinStrategy(CtaTemplate):
             traceback.print_exc()
             print 'traceback.format_exc():\n%s' % traceback.format_exc()
             print '########################################################'
-
-    """
-    # 平当日仓位, 如果当前时间是结束前日盘15点28分钟,或者夜盘10点58分钟，如果有持仓，平仓。
-    if ((currentTime >= self.DAY_START and currentTime <= self.DAY_END) or
-            (currentTime >= self.NIGHT_START and currentTime <= self.NIGHT_END)):
-        TA = self.tickArray
-        TA.updateTick(tick)
-        if not TA.inited:
-            return
-        if self.pos == 0:
-            # 如果空仓，分析过去10个对比，ask卖方多下空单，bid买方多下多单，并防止两个差价阻止单
-            if TA.askBidVolumeDif() > 0:
-                self.short(tick.lastPrice, self.fixedSize, False)
-                self.cover(tick.lastPrice + 2, self.fixedSize, True)
-            elif TA.askBidVolumeDif() < 0:
-                self.buy(tick.lastPrice, self.fixedSize, False)
-                self.sell(tick.lastPrice - 2, self.fixedSize, True)
-
-        elif self.pos > 0:
-            # 如果持有多单，如果已经是买入价格正向N3个点，再次判断趋势，如果已经不符合，市价卖出。如果持有，清掉之前阻止单，改挂当前价位反向2个点阻止单。
-            if tick.lastPrice - self.posPrice >= 3:
-                if TA.askBidVolumeDif() < 0:
-                    self.cancelAll()
-                    self.sell(tick.lastPrice - 2, self.fixedSize, True)
-                else:
-                    self.cancelAll()
-                    self.sell(tick.lastPrice, self.fixedSize, False)
-
-        elif self.pos < 0:
-            # 如果持有空单，如果已经是买入价格反向N3个点，再次判断趋势，如果已经不符合，市价卖出。如果持有，清掉之前阻止单，改挂当前价位反向2个点阻止单。
-            if tick.lastPrice - self.posPrice <= -3:
-                if TA.askBidVolumeDif() > 0:
-                    self.cancelAll()
-                    self.cover(tick.lastPrice + 2, self.fixedSize, True)
-                else:
-                    self.cancelAll()
-                    self.cover(tick.lastPrice, self.fixedSize, False)
-    else:
-        if self.pos > 0:
-            self.sell(tick.close, abs(self.pos), False)
-        elif self.pos < 0:
-            self.cover(tick.close, abs(self.pos), False)
-        elif self.pos == 0:
-            return
-    """
 
     # ----------------------------------------------------------------------
     def onBar(self, bar):

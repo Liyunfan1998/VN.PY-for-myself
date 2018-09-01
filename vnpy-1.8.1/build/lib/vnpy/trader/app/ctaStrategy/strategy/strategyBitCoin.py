@@ -216,42 +216,43 @@ class BitCoinStrategy(CtaTemplate):
             # 如果持有空单
             pass
         # 维护self.LastXminTickList))，取出最前一个，加入最末一个
-        if len(self.LastXminTickList>=5):
+        if len(self.LastXminTickList)>5:
             self.LastXminTickList.pop(0)
             self.LastXminTickList.append(tick.amount)
         # 计算beta
-        if tick.amount > self.lastTickPrice:
-            beta = tick.amount / self.lastTickPrice
-            betaSign = True  # 涨
-        else:
-            beta = self.lastTickPrice / tick.amount
-            betaSign = False  # 跌
-        # 维护lastTickPrice
-        self.lastTickPrice = tick.last
-
-        # 开仓策略：这次tick的成交量大于过去5分钟平均成交量的5倍
-        # 同时涨跌幅的绝对值>3%
-        if (tick.amount >= self.howManyTimes * np.mean(self.LastXminTickList)) \
-                & abs(beta) > 1 + self.BetaThreshold:
-            # 如果beta<0 反着开多单
-            if betaSign == False:
-                self.buy(tick.lastPrice, self.fixedSize, False)
-            # 如果beta>0 开空单
+        if tick.amount!=0 & self.lastTickPrice!=0:
+            if tick.amount > self.lastTickPrice:
+                beta = tick.amount / self.lastTickPrice
+                betaSign = True  # 涨
             else:
-                self.short(tick.lastPrice, self.fixedSize, False)
+                beta = self.lastTickPrice / tick.amount
+                betaSign = False  # 跌
+            # 维护lastTickPrice
+            self.lastTickPrice = tick.lastPrice
 
-        # 平仓策略：
-        for item in self.OrderList:
-            # 1.Timeout 从下单起120s强制性平仓
-            # timedelta()
-            # if (datetime.datetime.fromtimestamp(item.startTime) + timedelta(seconds=120)).time() >= currentTime:
-            #     self.sell(tick.lastPrice - 2, self.fixedSize, True)
-            # 2.abs(beta) 回归 1%(可调)
-            if abs(beta) <= 1 + self.BetaNormal:
-                self.sell(tick.lastPrice - 2, self.fixedSize, True)
-            # 止损 loss > 0.5%（可调）
-            if loss > self.maxBearableLoss:
-                self.sell(tick.lastPrice - 2, self.fixedSize, True)
+            # 开仓策略：这次tick的成交量大于过去5分钟平均成交量的5倍
+            # 同时涨跌幅的绝对值>3%
+            if (tick.amount >= self.howManyTimes * np.mean(self.LastXminTickList)) \
+                    & abs(beta) > 1 + self.BetaThreshold:
+                # 如果beta<0 反着开多单
+                if betaSign == False:
+                    self.buy(tick.lastPrice, self.fixedSize, False)
+                # 如果beta>0 开空单
+                else:
+                    self.short(tick.lastPrice, self.fixedSize, False)
+
+            # 平仓策略：
+            for item in self.OrderList:
+                # 1.Timeout 从下单起120s强制性平仓
+                # timedelta()
+                # if (datetime.datetime.fromtimestamp(item.startTime) + timedelta(seconds=120)).time() >= currentTime:
+                #     self.sell(tick.lastPrice - 2, self.fixedSize, True)
+                # 2.abs(beta) 回归 1%(可调)
+                if abs(beta) <= 1 + self.BetaNormal:
+                    self.sell(tick.lastPrice - 2, self.fixedSize, True)
+                # 止损 loss > 0.5%（可调）
+                if loss > self.maxBearableLoss:
+                    self.sell(tick.lastPrice - 2, self.fixedSize, True)
 
     """
     # 平当日仓位, 如果当前时间是结束前日盘15点28分钟,或者夜盘10点58分钟，如果有持仓，平仓。

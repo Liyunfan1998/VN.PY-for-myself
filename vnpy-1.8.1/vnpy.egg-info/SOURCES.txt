@@ -190,6 +190,7 @@ vnpy/trader/app/ctaStrategy/language/chinese/text.py
 vnpy/trader/app/ctaStrategy/language/english/__init__.py
 vnpy/trader/app/ctaStrategy/language/english/text.py
 vnpy/trader/app/ctaStrategy/strategy/BitcoinStrategy.py
+vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py
 vnpy/trader/app/ctaStrategy/strategy/TickOneStrategy.py
 vnpy/trader/app/ctaStrategy/strategy/__init__.py
 vnpy/trader/app/ctaStrategy/strategy/strategyAtrRsi.py

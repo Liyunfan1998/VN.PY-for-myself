@@ -9,7 +9,7 @@ from vnpy.trader.app.ctaStrategy.ctaTemplate import *
 
 # if __name__ == '__main__':
 # from vnpy.trader.app.ctaStrategy.strategy.TickOneStrategy import *
-from vnpy.trader.app.ctaStrategy.strategy.BitcoinStrategy import *
+from vnpy.trader.app.ctaStrategy.strategy.BitcoinZhou import *
 
 # 创建回测引擎
 engine = BacktestingEngine()

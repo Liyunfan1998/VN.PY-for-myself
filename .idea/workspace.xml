@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c53536-2082-4093-b832-75b97edaff9c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py" beforeDir="false" afterPath="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,14 +84,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitcoinZhou.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BitcoinZhou.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3542">
-              <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+            <state relative-caret-position="253">
+              <caret line="263" lean-forward="true" selection-end-line="350" />
               <folding>
                 <element signature="e#20#51#0" expanded="true" />
                 <element signature="e#8987#10869#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BitcoinZhou.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="350" lean-forward="true" selection-start-line="350" selection-end-line="350" />
+              <folding>
+                <element signature="e#20#51#0" expanded="true" />
+                <element signature="e#8947#10829#1" />
               </folding>
             </state>
           </provider>
@@ -146,9 +159,9 @@
         <option value="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/strategyBitCoin.py" />
         <option value="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinStrategy.py" />
         <option value="$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinStrategy.py" />
-        <option value="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py" />
         <option value="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/backtest0.py" />
         <option value="$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py" />
+        <option value="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py" />
       </list>
     </option>
   </component>
@@ -381,6 +394,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5012029" side_tool="true" weight="0.6422168" />
@@ -388,9 +402,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49920508" weight="0.32925835" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.5183374" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.5183374" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49920508" weight="0.32925835" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.093023255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.093023255" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" sideWeight="0.54483926" visible="true" weight="0.10224539" />
@@ -488,11 +502,6 @@
           <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinStrategy.py</url>
           <line>210</line>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py</url>
-          <line>183</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinStrategy.py</url>
@@ -918,16 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3059">
-          <caret line="211" column="45" lean-forward="true" selection-start-line="211" selection-start-column="45" selection-end-line="211" selection-end-column="45" />
-          <folding>
-            <element signature="e#20#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinStrategy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-598">
@@ -971,11 +970,22 @@
     </entry>
     <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3542">
-          <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+        <state relative-caret-position="253">
+          <caret line="263" lean-forward="true" selection-end-line="350" />
           <folding>
             <element signature="e#20#51#0" expanded="true" />
             <element signature="e#8987#10869#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="350" lean-forward="true" selection-start-line="350" selection-end-line="350" />
+          <folding>
+            <element signature="e#20#51#0" expanded="true" />
+            <element signature="e#8947#10829#1" />
           </folding>
         </state>
       </provider>

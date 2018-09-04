@@ -14,9 +14,19 @@ import numpy as np
 import pandas as pd
 import statsmodels.api as sm # 最小二乘
 from statsmodels.stats.outliers_influence import summary_table # 获得汇总信息
+from datetime import timedelta
+
 
 import traceback
 
+class Item():
+    startTime = datetime.now()
+    isLong = True
+    orderDone = False
+    def __init__(self):
+        self.startTime=datetime.now()
+        self.isLong=True
+        self.orderDone=False
 
 # CTAtemplate 加入新类TickArrayManager
 ########################################################################
@@ -86,7 +96,7 @@ class BitCoinStrategy(CtaTemplate):
     fixedSize = 1
     Ticksize = 240
     initDays = 0
-    BetaThreshold = 0.03
+    BetaThreshold = 0.3
     BetaNormal = 0.01
     howManyTimes = 5
     howManyMinutes = 5
@@ -130,6 +140,7 @@ class BitCoinStrategy(CtaTemplate):
                'trading',
                'pos',
                'posPrice',
+               'OrderList',
                'beta',
                'loss'
                ]
@@ -138,6 +149,7 @@ class BitCoinStrategy(CtaTemplate):
     syncList = ['pos',
                 'posPrice',
                 'beta',
+                'OrderList',
                 'loss',
                 'intraTradeHigh',
                 'intraTradeLow']
@@ -207,11 +219,12 @@ class BitCoinStrategy(CtaTemplate):
                 # 从模型获得拟合数据
                 #st, data, ss2 = summary_table(res, alpha=0.05)  # 置信水平alpha=5%，st数据汇总，data数据详情，ss2数据列名
                 #fitted_values = data[:, 2]  # 等价于res.fittedvalues
-                self.beta = res.params
-                if tick.amount > self.lastTickPrice:
-                    self.betaSign = True  # 涨
-                else:
-                    self.betaSign = False  # 跌
+                params=res.params
+                self.beta = res.params[1]
+                #if tick.amount > self.lastTickPrice:
+                #    self.betaSign = True  # 涨
+                #else:
+                #    self.betaSign = False  # 跌
                 # 维护lastTickPrice
         self.lastTickPrice = tick.lastPrice
         self.LastXminTickList.append(tick.amount)
@@ -221,33 +234,46 @@ class BitCoinStrategy(CtaTemplate):
             # 开仓策略：这次tick的成交量大于过去5分钟平均成交量的5倍
             # 同时涨跌幅的绝对值>3%
             if (tick.amount >= self.howManyTimes * np.mean(self.LastXminTickList)) \
-                    and (abs(self.beta) > (1 + self.BetaThreshold)):
+                    and ((abs(self.beta) > self.BetaThreshold)):
                 # 如果beta<0 反着开多单
-                if self.betaSign == False:
+                if self.beta<0:
                     self.buy(tick.lastPrice, self.fixedSize, False)
-                    self.lastDealTime = datetime.now()
+                    item = Item
+                    #item.startTime = datetime.now()
+                    #item.isLong = True
+                    self.OrderList.append(item)
                 # 如果beta>0 开空单
                 else:
                     self.short(tick.lastPrice, self.fixedSize, False)
-                    self.lastDealTime = datetime.now()
+                    item = Item
+                    #item.startTime = datetime.now()
+                    item.isLong = False
+                    self.OrderList.append(item)
 
             # 平仓策略：
             for item in self.OrderList:
+                if item.orderDone==True:
+                    continue
                 # 1.Timeout 从下单起120s强制性平仓
-                if datetime.datetime.fromtimestamp(item.startTime) + timedelta(seconds=120) >= self.lastDealTime:
-                    self.sell(tick.lastPrice - 2, self.fixedSize, True)
+                if item.startTime + timedelta(seconds=120) >= datetime.now():
+                    item.orderDone = True
+                    if item.isLong == True:
+                        self.sell(tick.lastPrice - 2, self.fixedSize, False)
+                    elif item.isLong==False:
+                        self.cover(tick.lastPrice - 2, self.fixedSize, False)
+
                 # 2.abs(beta) 回归 1%(可调)
-                if abs(self.beta) <= 1 + self.BetaNormal:
-                    self.sell(tick.lastPrice - 2, self.fixedSize, True)
+                if abs(self.beta) <= self.BetaNormal and item.orderDone:
+                    item.orderDone = True
+                    if item.isLong == True:
+                        self.sell(tick.lastPrice - 2, self.fixedSize, False)
+                    elif item.isLong==False:
+                        self.cover(tick.lastPrice - 2, self.fixedSize, False)
+
                 # 止损 loss > 0.5%（可调）
-                if loss > self.maxBearableLoss:
-                    self.sell(tick.lastPrice - 2, self.fixedSize, True)
+                #if loss > self.maxBearableLoss and item.orderDone:
+                #    self.sell(tick.lastPrice - 2, self.fixedSize, True)
         except Exception, e:
-            # print 'str(Exception):\t', str(Exception)
-            # print 'str(e):\t\t', str(e)
-            # print 'repr(e):\t', repr(e)
-            # print 'e.message:\t', e.message
-            # print 'traceback.print_exc():';
             traceback.print_exc()
             print 'traceback.format_exc():\n%s' % traceback.format_exc()
             print '########################################################'

@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b4c53536-2082-4093-b832-75b97edaff9c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vnpy-1.8.1/build/lib/vnpy/trader/app/ctaStrategy/backtest0.py" beforeDir="false" afterPath="$PROJECT_DIR$/vnpy-1.8.1/build/lib/vnpy/trader/app/ctaStrategy/backtest0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vnpy-1.8.1/build/lib/vnpy/trader/app/ctaStrategy/strategy/BitcoinStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/vnpy-1.8.1/build/lib/vnpy/trader/app/ctaStrategy/strategy/BitcoinStrategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vnpy-1.8.1/build/lib/vnpy/trader/app/ctaStrategy/strategy/strategyBitCoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/vnpy-1.8.1/build/lib/vnpy/trader/app/ctaStrategy/strategy/strategyBitCoin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vnpy-1.8.1/dist/vnpy-1.8.1-py2.7.egg" beforeDir="false" afterPath="$PROJECT_DIR$/vnpy-1.8.1/dist/vnpy-1.8.1-py2.7.egg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vnpy-1.8.1/vnpy.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vnpy-1.8.1/vnpy.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/backtest0.py" beforeDir="false" afterPath="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/backtest0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py" beforeDir="false" afterPath="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +14,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/vnpy_1_8_1$vnpy_1_8_1.coverage" NAME="vnpy-1.8.1 Coverage Results" MODIFIED="1534246710970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vnpy-1.8.1" />
     <SUITE FILE_PATH="coverage/vnpy_1_8_1$.coverage" NAME=" Coverage Results" MODIFIED="1534245962386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/vnpy_1_8_1$backtest0.coverage" NAME="backtest0 Coverage Results" MODIFIED="1535771177928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy" />
+    <SUITE FILE_PATH="coverage/vnpy_1_8_1$backtest0.coverage" NAME="backtest0 Coverage Results" MODIFIED="1536022308149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -55,8 +48,8 @@
       <file leaf-file-name="ctaTemplate.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/ctaTemplate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2553">
-              <caret line="117" selection-start-line="117" selection-end-line="117" />
+            <state relative-caret-position="267">
+              <caret line="125" column="8" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -65,7 +58,7 @@
         <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/ctaBacktesting.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
-              <caret line="837" selection-start-line="837" selection-end-line="837" />
+              <caret line="377" selection-start-line="377" selection-end-line="377" />
             </state>
           </provider>
         </entry>
@@ -73,7 +66,7 @@
       <file leaf-file-name="collections.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/collections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="2392">
               <caret line="105" column="79" selection-start-line="105" selection-start-column="79" selection-end-line="105" selection-end-column="79" />
             </state>
           </provider>
@@ -82,8 +75,8 @@
       <file leaf-file-name="backtest0.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/backtest0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="263">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
                 <element signature="e#53#89#0" expanded="true" />
               </folding>
@@ -94,8 +87,12 @@
       <file leaf-file-name="BitcoinZhou.py" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
+            <state relative-caret-position="-3542">
+              <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+              <folding>
+                <element signature="e#20#51#0" expanded="true" />
+                <element signature="e#8987#10869#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,9 +120,11 @@
       <find>TA</find>
       <find>tmplist</find>
       <find>openInterest</find>
-      <find>beta</find>
-      <find>LastXminTickList</find>
       <find>currentTime</find>
+      <find>LastXminTickList</find>
+      <find>delta</find>
+      <find>BetaThreshold</find>
+      <find>beta</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -384,20 +383,20 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5008" side_tool="true" weight="0.39935327" />
-      <window_info anchor="right" x="0" y="0" width="354" height="676" id="Documentation" order="5" sideWeight="0.45202312" side_tool="true" visible="true" weight="0.10224539" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5012029" side_tool="true" weight="0.6422168" />
+      <window_info anchor="right" x="0" y="0" width="594" height="1216" id="Documentation" order="5" sideWeight="0.45516074" side_tool="true" visible="true" weight="0.10224539" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49920508" weight="0.32942098" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960938" weight="0.60961694" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49920508" weight="0.32942098" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09182037" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49920508" weight="0.32925835" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960938" visible="true" weight="0.5183374" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49920508" weight="0.32925835" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.093023255" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.54797685" visible="true" weight="0.10224539" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.54483926" visible="true" weight="0.10224539" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4992" visible="true" weight="0.29502854" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49879712" weight="0.29502854" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -506,14 +505,39 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py</url>
-          <line>211</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/ctaBacktesting.py</url>
           <line>837</line>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py</url>
+          <line>246</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py</url>
+          <line>239</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py</url>
+          <line>257</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/ctaBacktesting.py</url>
+          <line>383</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py</url>
+          <line>253</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -523,18 +547,43 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="tick.amount" language="Python" />
         <watch expression="self.beta" language="Python" />
         <watch expression="self.LastXminTickList" language="Python" />
+        <watch expression="tick" language="Python" />
+        <watch expression="tick.datetime" language="Python" />
+        <watch expression="__py_debug_temp_var_423191387" />
+        <watch expression="self.OrderList" language="Python" />
+        <watch expression="__py_debug_temp_var_1713959194" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>self.OrderList</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tick.datetime</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tick.</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tick</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>self.LastXminTickList</expression-string>
         <language-id>Python</language-id>
@@ -793,13 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/ctaTemplate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2553">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/pymongo/pool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -898,15 +940,15 @@
     </entry>
     <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/collections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="2392">
           <caret line="105" column="79" selection-start-line="105" selection-start-column="79" selection-end-line="105" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vnpy-1.8.1/vnpy/trader/app/ctaStrategy/backtest0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="263">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
             <element signature="e#53#89#0" expanded="true" />
           </folding>
@@ -916,14 +958,25 @@
     <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/ctaBacktesting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
-          <caret line="837" selection-start-line="837" selection-end-line="837" />
+          <caret line="377" selection-start-line="377" selection-end-line="377" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/ctaTemplate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="125" column="8" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Anaconda2_x86/Lib/site-packages/vnpy-1.8.1-py2.7.egg/vnpy/trader/app/ctaStrategy/strategy/BitcoinZhou.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
+        <state relative-caret-position="-3542">
+          <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+          <folding>
+            <element signature="e#20#51#0" expanded="true" />
+            <element signature="e#8987#10869#1" />
+          </folding>
         </state>
       </provider>
     </entry>
